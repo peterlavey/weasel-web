@@ -7,16 +7,41 @@
 
     <script src="./vendor/material-design-lite/material.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Hola</h1>
-    <!-- Accent-colored raised button with ripple -->
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-      Button
-    </button>
-    <!-- Colored FAB button -->
-    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
-      <i class="material-icons">add</i>
-    </button>
+    <div class="layout-transparent mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header--transparent">
+        <div class="mdl-layout__header-row">
+          <span class="logo mdl-layout__title">Weasel</span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="#">Features</a>
+            <a class="mdl-navigation__link" href="#">Docs</a>
+            <a class="mdl-navigation__link" href="#">Log-In</a>
+            <a class="mdl-navigation__link" href="#">Sing-Up</a>
+          </nav>
+        </div>
+      </header>
+      <div class="almost-fullscreen mdl-grid mdl-color-text--grey-100">
+         <div class="mdl-cell mdl-cell--middle mdl-cell--12-col">
+            <p class="mdl-typography--display-4 mdl-typography--text-center">
+
+               Don't worry about backend
+            </p>
+            <p class="mdl-typography--headline mdl-typography--text-center mdl-color-text--blue-grey-100">
+               Creates, groups and start your services
+            </p>
+            <footer class="mdl-typography--text-center">
+               <button class="mdl-button mdl-js-button mdl-color-text--grey-100">
+                  Get started
+               </button>
+               <a href="https://bitbucket.org/PedroCisternas/weasel-build/get/07153f932425.zip" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-color--white mdl-color-text--black">
+                  Download
+               </a>
+            </footer>
+         </div>
+      </div>
+    </div>
   </body>
 </html>
