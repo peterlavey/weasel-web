@@ -1,0 +1,23 @@
+{
+  "name": "weasel-web",
+  "version": "1.0.0",
+  "description": "Single page for weasel application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://PedroCisternas@bitbucket.org/PedroCisternas/weasel-web.git"
+  },
+  "author": "Pedro Cisternas",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/PedroCisternas/weasel-web#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "method-override": "^2.3.7",
+    "minimist": "^1.2.0"
+  }
+}
