@@ -1,3 +1,7 @@
+section {
+  padding: 0 3%
+}
+
 @font-face {
   font-family: 'Queen';
   src: url('../assets/queen-of-heaven-regular.ttf');
@@ -10,8 +14,8 @@
 }
 
 .layout-transparent {
-  /*background: url('../assets/background.jpg') center / cover;*/
-  background-color: #000;
+  /*background: url('../assets/background.jpg') center / cover;
+  background-color: #000;*/
 }
 
 .layout-transparent span,
@@ -22,7 +26,44 @@
   color: white;
 }
 
+.fullscreen{
+   position: relative;
+   height: 100vh;
+}
+
 .almost-fullscreen{
    position: relative;
    height: 90vh;
+}
+
+.weasel-card-image.mdl-card {
+  width: 1024px;
+  height: 512px;
+}
+
+.weasel-card-image.mdl-card.proxy {
+  background: url('../assets/proxy.png') center / cover;
+}
+
+.weasel-card-image.mdl-card.create-folder {
+  background: url('../assets/create-folder.png') center / cover;
+}
+
+.weasel-card-image.mdl-card.create-services {
+  background: url('../assets/create-services.png') center / cover;
+}
+
+.weasel-card-image.mdl-card.startup {
+  background: url('../assets/startup.png') center / cover;
+}
+
+.weasel-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.weasel-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
 }
