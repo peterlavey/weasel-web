@@ -9,6 +9,18 @@ img {
     position: relative;
 }
 
+.mt {
+  margin-top: 7%;
+}
+
+.mdl-tabs__tab {
+  color: #EEE !important;
+}
+
+.is-active {
+  color: #FFF !important;
+}
+
 .tutorial-card {
   display: inline-block;
   max-width: 20%;
@@ -26,6 +38,10 @@ img {
   padding: inherit;
 }
 
+.mdl-logo {
+  background: url('../assets/weasel-logo-inverse.png') center / cover;
+}
+
 .layout-transparent {
   /*background: url('../assets/background.jpg') center / cover;
   background-color: #000;*/
@@ -33,6 +49,10 @@ img {
 
 .weasel-phones {
   background: url('../assets/weasel-phones.jpg') center / cover;
+}
+
+.weasel-phones h2 {
+  margin: initial;
 }
 
 .layout-transparent span,

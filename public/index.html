@@ -10,124 +10,209 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="layout-transparent mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <section id="main" class="mdl-color--black">
-        <header class="mdl-layout__header--transparent">
-          <div class="mdl-layout__header-row">
-            <span class="logo mdl-layout__title">Weasel</span>
-            <div class="mdl-layout-spacer"></div>
-            <nav class="mdl-navigation">
-              <a class="mdl-navigation__link" href="#">Features</a>
-              <a class="mdl-navigation__link" href="#">Docs</a>
-              <a class="mdl-navigation__link" href="#">Log-In</a>
-              <a class="mdl-navigation__link" href="#">Sing-Up</a>
-            </nav>
-          </div>
-        </header>
-        <div class="almost-fullscreen mdl-grid mdl-color-text--grey-100">
-           <div class="mdl-cell mdl-cell--middle mdl-cell--12-col">
-              <p class="mdl-typography--display-4 mdl-typography--text-center">
+    <div class="layout-transparent mdl-tabs mdl-js-tabs mdl-layout--fixed-header">
 
-                 Don't worry about backend
-              </p>
-              <p class="mdl-typography--headline mdl-typography--text-center mdl-color-text--blue-grey-100">
-                 Creates, groups and start your services
-              </p>
-              <footer class="mdl-typography--text-center">
-                 <button class="mdl-button mdl-js-button mdl-color-text--grey-100">
-                    Get started
-                 </button>
-                 <a href="https://bitbucket.org/PedroCisternas/weasel-build/get/07153f932425.zip" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-color--white mdl-color-text--black">
-                    Download
-                 </a>
-              </footer>
-           </div>
+      <header class="mdl-layout__header mdl-color--black">
+        <div class="mdl-layout__header-row">
+          <span class="logo mdl-layout__title">Weasel</span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation">
+            <a class="mdl-tabs__tab is-active" href="#home">Home</a>
+            <a class="mdl-tabs__tab" href="#features">Features</a>
+            <a class="mdl-tabs__tab" href="#">Docs</a>
+            <a class="mdl-tabs__tab" href="#">Log-In</a>
+            <a class="mdl-tabs__tab" href="#">Sing-Up</a>
+          </nav>
         </div>
-      </section>
+      </header>
 
-      <section id="1" class="weasel-phones">
-        <div class="fullscreen mdl-grid mdl-color-text--contrast">
-        </div>
-      </section>
-
-      <section id="2" class="mdl-color--white">
-        <div class="almost-fullscreen mdl-grid">
-          <div class="tutorial-card mdl-card--transparent">
-            <div class="mdl-card__title">
-              <img src="../assets/config.png" alt="">
-            </div>
-            <div class="mdl-card__supporting-text">
-              <h2 class="mdl-typography--text-center mdl-typography--display-1-color-contrast mdl-typography--font-thin">
-                Config
+      <div class="mdl-tabs__panel" id="features">
+        <section id="1" class="mdl-color--white">
+          <div class="fullscreen mdl-grid mdl-color-text--contrast">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h2 class="mdl-typography--text-center mdl-typography--display-4 mdl-color-text--black">
+               Features
               </h2>
-              <p class="mdl-typography--text-center mdl-typography--headline-color-contrast">
-                Elige en que puerto se desplegarán los servicios
-              </p>
+
+              <div class="tutorial-card mdl-card--transparent">
+                <div class="mdl-card__title">
+                  <img src="../assets/config.png" alt="">
+                </div>
+                <div class="mdl-card__supporting-text">
+                  <h2 class="mdl-typography--text-center mdl-typography--display-1-color-contrast mdl-typography--font-thin">
+                    Format JSON
+                  </h2>
+                  <p class="mdl-typography--text-center mdl-typography--headline-color-contrast">
+                    Elige en que puerto se desplegarán los servicios
+                  </p>
+                </div>
+              </div>
+
+              <div class="tutorial-card mdl-card--transparent">
+                <div class="mdl-card__title">
+                  <img src="../assets/config.png" alt="">
+                </div>
+                <div class="mdl-card__supporting-text">
+                  <h2 class="mdl-typography--text-center mdl-typography--display-1-color-contrast mdl-typography--font-thin">
+                    Import
+                  </h2>
+                  <p class="mdl-typography--text-center mdl-typography--headline-color-contrast">
+                    Elige en que puerto se desplegarán los servicios
+                  </p>
+                </div>
+              </div>
+
+              <div class="tutorial-card mdl-card--transparent">
+                <div class="mdl-card__title">
+                  <img src="../assets/config.png" alt="">
+                </div>
+                <div class="mdl-card__supporting-text">
+                  <h2 class="mdl-typography--text-center mdl-typography--display-1-color-contrast mdl-typography--font-thin">
+                    Export
+                  </h2>
+                  <p class="mdl-typography--text-center mdl-typography--headline-color-contrast">
+                    Elige en que puerto se desplegarán los servicios
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
+        </section>
+      </div>
 
-          <div class="tutorial-card mdl-card--transparent">
-            <div class="mdl-card__title">
-              <img src="../assets/folder.png" alt="">
-            </div>
-            <div class="mdl-card__supporting-text">
-              <h2 class="mdl-typography--text-center mdl-typography--display-1-color-contrast mdl-typography--font-thin">
-                Folders
+      <div class="mdl-tabs__panel is-active" id="home">
+        <section id="main" class="mdl-color--black">
+          <div class="fullscreen mdl-grid mdl-color-text--grey-100">
+             <div class="mdl-cell mdl-cell--middle mdl-cell--12-col">
+                <p class="mdl-typography--display-4 mdl-typography--text-center">
+                   Don't worry about backend
+                </p>
+                <p class="mdl-typography--headline mdl-typography--text-center mdl-color-text--blue-grey-100">
+                   Creates, groups and start your services
+                </p>
+                <footer class="mdl-typography--text-center">
+                   <button class="mdl-button mdl-js-button mdl-color-text--grey-100">
+                      Get started
+                   </button>
+                   <a href="https://bitbucket.org/PedroCisternas/weasel-build/get/07153f932425.zip" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-color--white mdl-color-text--black">
+                      Download
+                   </a>
+                </footer>
+             </div>
+          </div>
+        </section>
+
+        <section id="1" class="mdl-color--yellow-A200">
+          <div class="mdl-grid mdl-color-text--contrast">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h2 class="mdl-typography--text-center mdl-typography--display-4 mdl-color-text--black">
+                SERVICE ARE DOWN!?
               </h2>
-              <p class="mdl-typography--text-center mdl-typography--headline-color-contrast">
-                Crea directorios para mantener tus servicios ordenados
-              </p>
             </div>
           </div>
+        </section>
 
-          <div class="tutorial-card mdl-card--transparent">
-            <div class="mdl-card__title">
-              <img src="../assets/service.png" alt="">
-            </div>
-            <div class="mdl-card__supporting-text">
-              <h2 class="mdl-typography--text-center mdl-typography--display-1-color-contrast mdl-typography--font-thin">
-                Services
+        <section id="1" class="weasel-phones">
+          <div class="fullscreen mdl-grid mdl-color-text--contrast">
+            <div class="mdl-cell mdl-cell--6-col"></div>
+            <div class="mdl-cell mdl-cell--6-col mt">
+              <h2 class="mdl-typography--text-center mdl-typography--display-4 mdl-color-text--white">
+                KEEP
               </h2>
-              <p class="mdl-typography--text-center mdl-typography--headline-color-contrast">
-                Añade servicios al directorio actual
-              </p>
+              <h2 class="mdl-typography--text-center mdl-typography--display-4 mdl-color-text--white">
+                CALM
+              </h2>
+              <h2 class="mdl-typography--text-center mdl-typography--display-2 mdl-color-text--white">
+                AND
+              </h2>
+              <h2 class="mdl-typography--text-center mdl-typography--display-4 mdl-color-text--white">
+                USE
+              </h2>
+              <h2 class="mdl-typography--text-center mdl-typography--display-4 mdl-color-text--white">
+                WEASEL
+              </h2>
             </div>
           </div>
+        </section>
 
-          <div class="tutorial-card mdl-card--transparent">
-            <div class="mdl-card__title">
-              <img src="../assets/start.png" alt="">
+        <section id="2" class="mdl-color--white">
+          <div class="almost-fullscreen mdl-grid">
+            <div class="tutorial-card mdl-card--transparent">
+              <div class="mdl-card__title">
+                <img src="../assets/config.png" alt="">
+              </div>
+              <div class="mdl-card__supporting-text">
+                <h2 class="mdl-typography--text-center mdl-typography--display-1-color-contrast mdl-typography--font-thin">
+                  Config
+                </h2>
+                <p class="mdl-typography--text-center mdl-typography--headline-color-contrast">
+                  Elige en que puerto se desplegarán los servicios
+                </p>
+              </div>
             </div>
-            <div class="mdl-card__supporting-text">
-              <h2 class="mdl-typography--text-center mdl-typography--display-1-color-contrast mdl-typography--font-thin">
-                Startup
-              </h2>
-              <p class="mdl-typography--text-center mdl-typography--headline-color-contrast">
-                Despliega todos los servicios del directorio
-              </p>
+
+            <div class="tutorial-card mdl-card--transparent">
+              <div class="mdl-card__title">
+                <img src="../assets/folder.png" alt="">
+              </div>
+              <div class="mdl-card__supporting-text">
+                <h2 class="mdl-typography--text-center mdl-typography--display-1-color-contrast mdl-typography--font-thin">
+                  Folders
+                </h2>
+                <p class="mdl-typography--text-center mdl-typography--headline-color-contrast">
+                  Crea directorios para mantener tus servicios ordenados
+                </p>
+              </div>
+            </div>
+
+            <div class="tutorial-card mdl-card--transparent">
+              <div class="mdl-card__title">
+                <img src="../assets/service.png" alt="">
+              </div>
+              <div class="mdl-card__supporting-text">
+                <h2 class="mdl-typography--text-center mdl-typography--display-1-color-contrast mdl-typography--font-thin">
+                  Services
+                </h2>
+                <p class="mdl-typography--text-center mdl-typography--headline-color-contrast">
+                  Añade servicios al directorio actual
+                </p>
+              </div>
+            </div>
+
+            <div class="tutorial-card mdl-card--transparent">
+              <div class="mdl-card__title">
+                <img src="../assets/start.png" alt="">
+              </div>
+              <div class="mdl-card__supporting-text">
+                <h2 class="mdl-typography--text-center mdl-typography--display-1-color-contrast mdl-typography--font-thin">
+                  Startup
+                </h2>
+                <p class="mdl-typography--text-center mdl-typography--headline-color-contrast">
+                  Despliega todos los servicios del directorio
+                </p>
+              </div>
+            </div>
+
+            <div class="tutorial-card mdl-card--transparent">
+              <div class="mdl-card__title">
+                <img src="../assets/search.png" alt="">
+              </div>
+              <div class="mdl-card__supporting-text">
+                <h2 class="mdl-typography--text-center mdl-typography--display-1-color-contrast mdl-typography--font-thin">
+                  Search
+                </h2>
+                <p class="mdl-typography--text-center mdl-typography--headline-color-contrast">
+                  Busca los servicios creados y usalos en otros directorios
+                </p>
+              </div>
             </div>
           </div>
-
-          <div class="tutorial-card mdl-card--transparent">
-            <div class="mdl-card__title">
-              <img src="../assets/search.png" alt="">
-            </div>
-            <div class="mdl-card__supporting-text">
-              <h2 class="mdl-typography--text-center mdl-typography--display-1-color-contrast mdl-typography--font-thin">
-                Search
-              </h2>
-              <p class="mdl-typography--text-center mdl-typography--headline-color-contrast">
-                Busca los servicios creados y usalos en otros directorios
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <footer class="mdl-mini-footer mdl-color--grey-900">
         <div class="mdl-mini-footer__left-section">
           <div class="mdl-logo">
-            Insertar Logo
           </div>
           <ul class="mdl-mini-footer__link-list">
             <li><a href="#">Help</a></li>
@@ -135,7 +220,6 @@
           </ul>
         </div>
       </footer>
-
     </div>
   </body>
 </html>
