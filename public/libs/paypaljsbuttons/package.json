@@ -1,0 +1,104 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "paypaljsbuttons",
+        "scope": null,
+        "escapedName": "paypaljsbuttons",
+        "name": "paypaljsbuttons",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\workspace\\WEASEL PROYECT\\weasel-web"
+    ]
+  ],
+  "_from": "paypaljsbuttons@latest",
+  "_id": "paypaljsbuttons@1.0.3",
+  "_inCache": true,
+  "_location": "/paypaljsbuttons",
+  "_npmUser": {
+    "name": "mstuart",
+    "email": "stuartmark@gmail.com"
+  },
+  "_npmVersion": "1.3.14",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "paypaljsbuttons",
+    "scope": null,
+    "escapedName": "paypaljsbuttons",
+    "name": "paypaljsbuttons",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/paypaljsbuttons/-/paypaljsbuttons-1.0.3.tgz",
+  "_shasum": "e4bc6f0a6b5cba11946b2492ec0be32a11d6b7e2",
+  "_shrinkwrap": null,
+  "_spec": "paypaljsbuttons",
+  "_where": "C:\\workspace\\WEASEL PROYECT\\weasel-web",
+  "author": {
+    "name": "Jeff Harrell",
+    "url": "https://github.com/jeffharrell/"
+  },
+  "bugs": {
+    "url": "https://github.com/paypal/JavaScriptButtons/issues"
+  },
+  "contributors": [
+    {
+      "name": "Mark Stuart",
+      "url": "https://github.com/mstuart/"
+    }
+  ],
+  "dependencies": {},
+  "description": "JavaScript integration for PayPal's payment buttons",
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-mocha-test": "~0.7.0",
+    "jsdom": "~0.8.10",
+    "mocha": "~1.13.0",
+    "should": "~2.1.1"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "e4bc6f0a6b5cba11946b2492ec0be32a11d6b7e2",
+    "tarball": "https://registry.npmjs.org/paypaljsbuttons/-/paypaljsbuttons-1.0.3.tgz"
+  },
+  "homepage": "http://paypal.github.com/JavaScriptButtons",
+  "issues": "http://github.com/paypal/JavaScriptButtons/issues",
+  "keywords": [
+    "paypal",
+    "paypal button",
+    "credit card",
+    "payment",
+    "payments",
+    "ecommerce",
+    "javascriptbuttons",
+    "jsbuttons"
+  ],
+  "maintainers": [
+    {
+      "name": "mstuart",
+      "email": "stuartmark@gmail.com"
+    }
+  ],
+  "name": "paypaljsbuttons",
+  "optionalDependencies": {},
+  "readme": "## PayPal Payment Buttons [![Build Status](https://travis-ci.org/paypal/JavaScriptButtons.png?branch=master)](https://travis-ci.org/paypal/JavaScriptButtons)\n\nPayPal HTML payment buttons that are as easy as including a snippet of code. [Try it out and configure your own](http://paypal.github.com/JavaScriptButtons/).\n\nWe have a few flavors of buttons for you to use:\n\n### Buy Now\nBuy Now buttons are for single item purchases.\n\n```html\n<script src=\"paypal-button.min.js?merchant=YOUR_MERCHANT_ID\"\n    data-button=\"buynow\"\n    data-name=\"My product\"\n    data-amount=\"1.00\"\n></script>\n```\n\n### Add To Cart\nAdd To Cart buttons let users add multiple items to their PayPal cart.\n\n```html\n<script src=\"paypal-button.min.js?merchant=YOUR_MERCHANT_ID\"\n    data-button=\"cart\"\n    data-name=\"Product in your cart\"\n    data-amount=\"1.00\"\n></script>\n```\n\n### QR Codes\nQR codes can be easily scanned with a smart phone to check out.\n\n```html\n<script src=\"paypal-button.min.js?merchant=YOUR_MERCHANT_ID\"\n    data-button=\"qr\"\n    data-name=\"Product via QR code\"\n    data-amount=\"1.00\"\n></script>\n```\n\n### Donations\nDonation buttons let you accept donations from your users.\n\n```html\n<script src=\"paypal-button.min.js?merchant=YOUR_MERCHANT_ID\"\n    data-button=\"donate\"\n    data-name=\"My donation\"\n    data-amount=\"1.00\"\n></script>\n```\n\n### Subscriptions\nSubscribe buttons let you set up payment subscriptions.\n\n```html\n<script src=\"paypal-button.min.js?merchant=YOUR_MERCHANT_ID\"\n    data-button=\"subscribe\"\n    data-name=\"My product\"\n    data-amount=\"1.00\"\n    data-recurrence=\"1\"\n    data-period=\"M\"\n></script>\n```\n\n\n## Button variables\nAll of PayPal's [HTML button variables](https://developer.paypal.com/webapps/developer/docs/classic/paypal-payments-standard/integration-guide/Appx_websitestandard_htmlvariables/) are supported by prefixing their name with \"data-\". Here are the most commonly used:\n\n* `data-name` Description of the item.\n* `data-number` The number of the item.\n* `data-amount` The price of the item.\n* `data-currency` The currency of the item (note: these cannot be mixed).\n* `data-quantity` Quantity of items to purchase.\n* `data-shipping` The cost of shipping this item.\n* `data-tax` Transaction-based tax override variable.\n* `data-size` For button images: `small` and `large` work. For QR codes enter the pixel length of the longest side.\n* `data-locale` The desired locale of the PayPal site.\n* `data-callback` The IPN notify URL to be called on completion of the transaction.\n* `data-env` The PayPal environment to checkout in, e.g. `sandbox` (defaults to 'www')\n\n\n## Editable fields\nCreating editable fields is easy! Just add `-editable` to the name of your variable, e.g. `data-quantity-editable`, and an input field will magically appear for your users.\n\n## Callback notification\nOn completion of a transaction you can get a payment notification ([IPN](https://www.x.com/developers/paypal/documentation-tools/ipn/integration-guide/IPNIntro)) on a callback URL you specify using the `data-callback` attribute. An [IPN simulator](https://developer.paypal.com/webapps/developer/applications/ipn_simulator) is available on the sandbox.\n\n## Localization\n* Changing the default language of a button can be done by setting the variable `data-lc` with the correct locale code, e.g. es_ES.\n* Changing the default input labels of editable buttons can be done by overriding the default configuration, e.g. PAYPAL.apps.ButtonFactory.config.labels.\n\n\n## JavaScript API\nThere's even a fancy JavaScript API if you'd like to pragmatically create your buttons.\n\n**PAYPAL.apps.ButtonFactory.config**  \nThis can be overridden to change the default behavior of the buttons.\n\n**PAYPAL.apps.ButtonFactory.create(business, data, type, parentNode)**  \nCreates and returns an HTML element that contains the button code. \n> **business** - A string containing either the business ID or the business email  \n> **data** - A JavaScript object containing the button variables  \n> **type** - The button type, e.g. \"buynow\", \"cart\", \"qr\"  \n> **parentNode** - An HTML element to add the newly created button to (Optional)  \n\n\n## Download\nTo download the production-ready JavaScript you'll need to save one of these files:\n\n* [JavaScript Buttons](http://www.paypalobjects.com/js/external/paypal-button.min.js)\n\nTo see the un-minified code you can take a peek at [paypal-button.js](https://github.com/paypal/JavaScriptButtons/blob/master/src/paypal-button.js).\n\n\n## Browser support \nThe JavaScript buttons have been tested and work in all modern browsers including:\n\n* Chrome\n* Safari\n* Firefox\n* Internet Explorer 7+.\n\n\n## Getting your Merchant ID\nYour merchant ID needs to be added to the URL of the referenced script. This ID can either be your Secure Merchant ID, which can be found by logging into your PayPal account and visiting your profile, or your email address.\n\n\n## Contributing \n\nWe love contributions! If you'd like to contribute please submit a pull request via Github. \n\n[Mocha](https://github.com/visionmedia/mocha) is used to run our test cases. Please be sure to run these prior to your pull request and ensure nothing is broken.\n\n\n## Authors\n**Jeff Harrell**  \n[https://github.com/jeffharrell](https://github.com/jeffharrell)\n\n**Mark Stuart**  \n[https://github.com/mstuart](https://github.com/mstuart)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paypal/JavaScriptButtons.git"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "version": "1.0.3"
+}

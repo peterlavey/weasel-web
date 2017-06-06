@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="./vendor/material-design-lite/material.min.css">
 
     <script src="./vendor/material-design-lite/material.min.js" charset="utf-8"></script>
+    <script src="./analitycs.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="layout-transparent mdl-tabs mdl-js-tabs mdl-layout--fixed-header">
-
       <header class="mdl-layout__header mdl-color--black">
         <div class="mdl-layout__header-row">
           <span class="logo mdl-layout__title">Weasel</span>
@@ -19,9 +19,9 @@
           <nav class="mdl-navigation">
             <a class="mdl-tabs__tab is-active" href="#home">Home</a>
             <a class="mdl-tabs__tab" href="#features">Features</a>
-            <a class="mdl-tabs__tab" href="#">Docs</a>
-            <a class="mdl-tabs__tab" href="#">Log-In</a>
-            <a class="mdl-tabs__tab" href="#">Sing-Up</a>
+            <a class="mdl-tabs__tab" href="#docs">Docs</a>
+            <a class="mdl-tabs__tab" href="#contact">Contact</a>
+            <script src="./libs/paypaljsbuttons/dist/paypal-button.min.js?merchant=EHFPVTQPXANX4" data-button="donate" data-name="My donation" data-amount="1.00"></script>
           </nav>
         </div>
       </header>
@@ -80,6 +80,33 @@
         </section>
       </div>
 
+      <div class="mdl-tabs__panel" id="docs">
+        <section id="1" class="mdl-color--white">
+          <div class="fullscreen mdl-grid mdl-color-text--contrast">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h2 class="mdl-typography--text-center mdl-typography--display-4 mdl-color-text--black">
+               Comming soon...
+              </h2>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="mdl-tabs__panel" id="contact">
+        <section id="1" class="mdl-color--white">
+          <div class="fullscreen mdl-grid mdl-color-text--contrast">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h2 class="mdl-typography--text-center mdl-typography--display-4 mdl-color-text--black">
+               Contacto
+              </h2>
+              <h3 class="mdl-typography--text-center mdl-typography--display-3 mdl-color-text--blue">
+               pedrocisternasd@gmail.com
+              </h3>
+            </div>
+          </div>
+        </section>
+      </div>
+
       <div class="mdl-tabs__panel is-active" id="home">
         <section id="main" class="mdl-color--black">
           <div class="fullscreen mdl-grid mdl-color-text--grey-100">
@@ -94,9 +121,9 @@
                    <button class="mdl-button mdl-js-button mdl-color-text--grey-100">
                       Get started
                    </button>
-                   <a href="https://github.com/peterlavey/weasel/archive/master.zip" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-color--white mdl-color-text--black">
+                   <button onclick="download()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-color--white mdl-color-text--black">
                       Download
-                   </a>
+                   </button>
                 </footer>
              </div>
           </div>
