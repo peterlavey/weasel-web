@@ -7,6 +7,7 @@
 
     <script src="./vendor/material-design-lite/material.min.js" charset="utf-8"></script>
     <script src="./analitycs.js" charset="utf-8"></script>
+    <script src="./scripts.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="style.css">
   </head>
@@ -18,6 +19,7 @@
           <div class="mdl-layout-spacer"></div>
           <nav class="mdl-navigation">
             <a class="mdl-tabs__tab is-active" href="#home">Home</a>
+              <a id="btn-register" class="mdl-tabs__tab text-blue" href="#register">Get Pro</a>
             <a class="mdl-tabs__tab" href="#features">Features</a>
             <a class="mdl-tabs__tab" href="#docs">Docs</a>
             <a class="mdl-tabs__tab" href="#contact">Contact</a>
@@ -30,7 +32,7 @@
         <section id="1" class="mdl-color--white">
           <div class="fullscreen mdl-grid mdl-color-text--contrast">
             <div class="mdl-cell mdl-cell--12-col">
-              <h2 class="mdl-typography--text-center mdl-typography--display-4 mdl-color-text--black">
+              <h2 class="mdl-typography--text-center mdl-typography--display-3 mdl-color-text--black">
                Features
               </h2>
 
@@ -84,7 +86,7 @@
         <section id="1" class="mdl-color--white">
           <div class="fullscreen mdl-grid mdl-color-text--contrast">
             <div class="mdl-cell mdl-cell--12-col">
-              <h2 class="mdl-typography--text-center mdl-typography--display-4 mdl-color-text--black">
+              <h2 class="mdl-typography--text-center mdl-typography--display-3 mdl-color-text--black">
                Comming soon...
               </h2>
             </div>
@@ -96,12 +98,59 @@
         <section id="1" class="mdl-color--white">
           <div class="fullscreen mdl-grid mdl-color-text--contrast">
             <div class="mdl-cell mdl-cell--12-col">
-              <h2 class="mdl-typography--text-center mdl-typography--display-4 mdl-color-text--black">
+              <h2 class="mdl-typography--text-center mdl-typography--display-3 mdl-color-text--black">
                Contacto
               </h2>
               <h3 class="mdl-typography--text-center mdl-typography--display-3 mdl-color-text--blue">
                pedrocisternasd@gmail.com
               </h3>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="mdl-tabs__panel" id="register">
+        <section id="0" class="mdl-color--white">
+          <div class="fullscreen mdl-grid mdl-color-text--contrast">
+            <div class="mdl-cell mdl-cell--6-col height-80">
+              <h2 class="mdl-typography--display-1 mdl-color-text--black">La forma más sencilla de usar mock colaborativos</h2>
+              <p class="mdl-color-text--black">
+                Esta versión incluye un buscador de servicios que permite reutilizarlos, versión incluye un buscador de servicios que permite reutilizarlos
+                versión incluye un buscador de servicios que permite reutilizarlos versión incluye un buscador de servicios que permite reutilizarlos
+                versión incluye un buscador de servicios que permite reutilizarlos versión incluye un buscador de servicios que permite reutilizarlos.
+              </p>
+              <div class="weasel-register">
+                <img src="./assets/weasel-animate.png">
+              </div>
+
+            </div>
+            <div class="mdl-cell mdl-cell--6-col">
+              <div class="register-card mdl-card mdl-shadow--4dp mdl-color--grey-200">
+                <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Registrate</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  <form action="#">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width-80">
+                      <input class="mdl-textfield__input" type="text">
+                      <label class="mdl-textfield__label">Names</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width-80">
+                      <input class="mdl-textfield__input" type="text">
+                      <label class="mdl-textfield__label">Last Name</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width-80">
+                      <input class="mdl-textfield__input" type="text">
+                      <label class="mdl-textfield__label">Mail</label>
+                    </div>
+                  </form>
+                </div>
+                <div align="right" class="mdl-card__actions mdl-card--border bottom">
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                    Send
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -118,11 +167,11 @@
                    Creates, groups and start your services
                 </p>
                 <footer class="mdl-typography--text-center">
-                   <button class="mdl-button mdl-js-button mdl-color-text--grey-100">
-                      Get started
-                   </button>
-                   <button onclick="download()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-color--white mdl-color-text--black">
-                      Download
+                   <a href="https://github.com/peterlavey/weasel/archive/master.zip" class="mdl-button mdl-js-button mdl-color-text--grey-100">
+                     Open Source
+                   </a>
+                   <button onclick="goToRegister()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-color--white mdl-color-text--black">
+                     Get Trial
                    </button>
                 </footer>
              </div>
@@ -132,14 +181,14 @@
         <section id="1" class="mdl-color--yellow-A200">
           <div class="mdl-grid mdl-color-text--contrast">
             <div class="mdl-cell mdl-cell--12-col">
-              <h2 class="mdl-typography--text-center mdl-typography--display-4 mdl-color-text--black">
+              <h2 class="mdl-typography--text-center mdl-typography--display-3 mdl-color-text--black">
                 SERVICE ARE DOWN!?
               </h2>
             </div>
           </div>
         </section>
 
-        <section id="1" class="weasel-phones">
+        <section id="2" class="weasel-phones">
           <div class="fullscreen mdl-grid mdl-color-text--contrast">
             <div class="mdl-cell mdl-cell--6-col"></div>
             <div class="mdl-cell mdl-cell--6-col mt">
@@ -149,7 +198,7 @@
               <h2 class="mdl-typography--text-center mdl-typography--display-4 mdl-color-text--white">
                 CALM
               </h2>
-              <h2 class="mdl-typography--text-center mdl-typography--display-2 mdl-color-text--white">
+              <h2 class="mdl-typography--text-center mdl-typography--display-4 mdl-color-text--white">
                 AND
               </h2>
               <h2 class="mdl-typography--text-center mdl-typography--display-4 mdl-color-text--white">
@@ -162,7 +211,7 @@
           </div>
         </section>
 
-        <section id="2" class="mdl-color--white">
+        <section id="3" class="mdl-color--white">
           <div class="almost-fullscreen mdl-grid">
             <div class="tutorial-card mdl-card--transparent">
               <div class="mdl-card__title">
@@ -232,6 +281,25 @@
                   Busca los servicios creados y usalos en otros directorios
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="4" class="mdl-color--blue-300">
+          <div class="mdl-grid mdl-color-text--contrast">
+            <div class="mdl-cell mdl-cell--4-col" align="center">
+              <img class="img" src="./assets/github.png" alt="">
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+              <p class="mdl-typography--headline-color-contrast" style="margin: initial">
+                Open source
+              </p>
+              <p class="mdl-typography--title mdl-color-text--grey-900">
+                Weasel is a collaborative project
+              </p>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+
             </div>
           </div>
         </section>

@@ -9,6 +9,42 @@ img {
     position: relative;
 }
 
+.weasel-register{
+    position: absolute;
+    bottom: 0;
+    width: 20%;
+}
+
+.text-white{
+    color: #000;
+}
+
+.text-blue{
+    color: #3e50b4;
+}
+
+.register-card{
+    min-width: 100%;
+    min-height: 80%;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 1px;
+}
+
+.height-80{
+    max-height: 80%;
+}
+
+.width-80{
+    min-width: 80%;
+}
+
+.img{
+    max-width: 15%;
+}
+
 .mt {
   margin-top: 7%;
 }
@@ -49,6 +85,10 @@ img {
 
 .weasel-phones {
   background: url('../assets/weasel-phones.jpg') center / cover;
+}
+
+.github {
+    background: url('../assets/github.png') center / cover;
 }
 
 .weasel-phones h2 {
